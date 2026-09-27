@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.WolfyBrowser" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#5B4FD4</item>
+        <item name="colorPrimaryVariant">#4438B8</item>
+        <item name="colorSecondary">#7C6FE8</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Browsing">
+        <ListPreference
+            app:key="search_engine"
+            app:title="Search engine"
+            app:entries="@array/search_engine_entries"
+            app:entryValues="@array/search_engine_values"
+            app:defaultValue="duckduckgo"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            app:key="javascript_enabled"
+            app:title="JavaScript"
+            app:summaryOff="Most sites will break"
+            app:defaultValue="true" />
+        <SwitchPreferenceCompat
+            app:key="desktop_mode"
+            app:title="Desktop user agent"
+            app:defaultValue="false" />
+        <SwitchPreferenceCompat
+            app:key="block_images"
+            app:title="Block images"
+            app:summary="Saves data; WebView still loads pages"
+            app:defaultValue="false" />
+        <SwitchPreferenceCompat
+            app:key="force_dark"
+            app:title="Force dark on web pages"
+            app:summary="Requires WebView force-dark support"
+            app:defaultValue="false" />
+        <EditTextPreference
+            app:key="custom_user_agent"
+            app:title="Custom user agent"
+            app:summary="Overrides desktop mode when set"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Local data">
+        <Preference app:key="clear_history" app:title="Clear history" />
+        <Preference app:key="clear_cookies" app:title="Clear cookies" />
+        <Preference app:key="clear_cache" app:title="Clear WebView cache" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Root (Magisk module)">
+        <Preference
+            app:key="root_status"
+            app:title="Root access"
+            app:summary="Checking…"
+            app:selectable="false" />
+        <Preference
+            app:key="root_privapp_status"
+            app:title="Privileged permissions"
+            app:summary="Checking…"
+            app:selectable="false" />
+        <Preference
+            app:key="root_edit_config"
+            app:title="Edit browser.conf"
+            app:summary="/data/adb/magisk-browser/browser.conf — applied at boot by service.sh" />
+        <Preference
+            app:key="root_edit_hosts"
+            app:title="Edit hosts blocklist"
+            app:summary="One domain per line; used when hosts_blocklist=1" />
+        <SwitchPreferenceCompat
+            app:key="root_set_default_browser"
+            app:title="Set as default browser on boot"
+            app:defaultValue="false" />
+        <SwitchPreferenceCompat
+            app:key="root_hosts_blocklist"
+            app:title="Systemless hosts blocking"
+            app:summary="Overlays /system/etc/hosts from your blocklist"
+            app:defaultValue="false" />
+        <EditTextPreference
+            app:key="root_global_http_proxy"
+            app:title="Global HTTP proxy"
+            app:summary="host:port written to global http_proxy at boot; empty = leave alone" />
+        <EditTextPreference
+            app:key="root_webview_provider"
+            app:title="WebView provider package"
+            app:summary="e.g. com.google.android.webview — see docs/LIMITATIONS.md" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="About">
+        <Preference
+            app:key="about_version"
+            app:title="Version"
+            app:selectable="false" />
+        <Preference
+            app:key="about_repo"
+            app:title="Source code"
+            app:summary="github.com/CommunityPokeOrg/magisk-browser" />
+    </PreferenceCategory>
+</PreferenceScreen>

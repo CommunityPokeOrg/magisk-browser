@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Privileged-permission whitelist for the systemless priv-app install of
+  Wolfy Browser. Only permissions listed here AND declared in the app's
+  manifest AND privileged/signature-level can actually be granted.
+
+  WRITE_SECURE_SETTINGS lets the app apply WebView/proxy settings itself
+  (e.g. http_proxy) without a su round-trip. The app only ever writes the
+  settings shown in its own UI.
+-->
+<permissions>
+    <privapp-permissions package="org.communitypoke.magiskbrowser">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+</permissions>

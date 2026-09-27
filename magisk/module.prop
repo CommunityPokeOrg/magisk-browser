@@ -1,0 +1,6 @@
+id=magisk-browser
+name=Wolfy Browser — Root WebView Control
+version=v0.1.0
+versionCode=1
+author=CommunityPokeOrg (for Wolfy)
+description=Installs Wolfy Browser (org.communitypoke.magiskbrowser) as a privileged system browser and applies /data/adb/magisk-browser/browser.conf at boot: default-browser role, global HTTP proxy, WebView provider, systemless hosts blocking.

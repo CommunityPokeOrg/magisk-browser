@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wolfy Browser</string>
+    <string name="settings_title">Wolfy Browser settings</string>
+    <string name="url_hint">Search or enter address</string>
+    <string name="nav_back">Back</string>
+    <string name="nav_forward">Forward</string>
+    <string name="menu">Menu</string>
+
+    <string-array name="search_engine_entries">
+        <item>DuckDuckGo</item>
+        <item>Google</item>
+        <item>Brave Search</item>
+        <item>Bing</item>
+    </string-array>
+    <string-array name="search_engine_values">
+        <item>duckduckgo</item>
+        <item>google</item>
+        <item>brave</item>
+        <item>bing</item>
+    </string-array>
+</resources>
